@@ -1,2 +1,2 @@
 console.log('Loaded!');
-alert('do you want to close?');
+console.log('do you want to close?');
