@@ -1,22 +1,283 @@
+
 body {
-    font-family: sans-serif;
-    background-color: blue;
-    margin-top: 75px;
+  background: #212121;
+  font-size: 22px;
+  line-height: 32px;
+  color: #ffffff;
+  word-wrap: break-word ;
+  
 }
 
-.center {
-    text-align: center;
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #FFF;
+  margin-top: 100px;
+   font-family: monospace;
 }
 
-.text-big {
-    font-size: 300%;
+h3 {
+  font-size: 30px;
+  text-align: center;
+  color: #FFF;
 }
 
-.bold {
-    font-weight: bold;
+h3 a {
+  color: #FFF;
 }
 
-.img-medium {
-    height: 200px;
+a {
+  color: #FFF;
 }
 
+
+
+#container {
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+}
+
+nav {
+  margin: 50px 0;
+  background-color: #E64A19;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  display: inline-block;
+    margin-right: 10px;
+  background-color: #E64A19;
+    
+}
+
+nav a {
+  display: block;
+  padding: 0 10px;
+  color: #FFF;
+  font-size: 25px;
+  line-height: 60px;
+  text-decoration: none;
+    font-family: cursive;
+}
+
+nav a:hover {
+  background-color: #000000;
+}
+
+
+/* Hide Dropdowns by Default */
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+  /* the height of the main nav */
+}
+
+
+/* Display Dropdowns on Hover */
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+
+/* Second, Third and more Tiers	*/
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+
+/* Change this in order to change the Dropdown symbol */
+
+li > a:after {
+  content: ' +';
+}
+
+li > a:only-child:after {
+  content: '';
+}
+
+
+
+
+#cssSlider {
+  width: 800px;
+  height: 300px;
+  overflow: hidden;
+  
+  border: 10px solid #666;
+}
+
+#sliderImages {
+  width: 4000px;
+  height: 300px;
+  overflow: hidden;
+  /* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
+  animation: slide 16s infinite;
+  -moz-animation: slide 16s infinite;
+  -webkit-animation: slide 16s infinite;
+  -o-animation: slide 16s infinite;
+}
+
+#sliderImages img {
+    
+  float: left;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0px;
+  }
+  17% {
+    margin-left: 0px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  37% {
+    margin-left: -800px;
+  }
+  40% {
+    margin-left: -1600px;
+  }
+  57% {
+    margin-left: -1600px;
+  }
+  60% {
+    margin-left: -2400px;
+  }
+  77% {
+    margin-left: -2400px;
+  }
+  80% {
+    margin-left: -3200px;
+  }
+  97% {
+    margin-left: -3200px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@-moz-keyframes slide {
+  0% {
+    margin-left: 0px;
+  }
+  17% {
+    margin-left: 0px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  37% {
+    margin-left: -800px;
+  }
+  40% {
+    margin-left: -1600px;
+  }
+  57% {
+    margin-left: -1600px;
+  }
+  60% {
+    margin-left: -2400px;
+  }
+  77% {
+    margin-left: -2400px;
+  }
+  80% {
+    margin-left: -3200px;
+  }
+  100% {
+    margin-left: -3200px;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    margin-left: 0px;
+  }
+  17% {
+    margin-left: 0px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  37% {
+    margin-left: -800px;
+  }
+  40% {
+    margin-left: -1600px;
+  }
+  57% {
+    margin-left: -1600px;
+  }
+  60% {
+    margin-left: -2400px;
+  }
+  77% {
+    margin-left: -2400px;
+  }
+  80% {
+    margin-left: -3200px;
+  }
+  100% {
+    margin-left: -3200px;
+  }
+}
+
+@-o-keyframes slide {
+  0% {
+    margin-left: 0px;
+  }
+  17% {
+    margin-left: 0px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  37% {
+    margin-left: -800px;
+  }
+  40% {
+    margin-left: -1600px;
+  }
+  57% {
+    margin-left: -1600px;
+  }
+  60% {
+    margin-left: -2400px;
+  }
+  77% {
+    margin-left: -2400px;
+  }
+  80% {
+    margin-left: -3200px;
+  }
+  100% {
+    margin-left: -3200px;
+  }
+}
