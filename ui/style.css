@@ -127,7 +127,7 @@ li > a:only-child:after {
   width: 800px;
   height: 300px;
   overflow: hidden;
-  
+  margin: auto;
   border: 10px solid #666;
 }
 
