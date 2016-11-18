@@ -128,7 +128,7 @@ li > a:only-child:after {
   height: 300px;
   overflow: hidden;
   margin: auto;
-/*  border: 10px solid #666;*/
+ border: 10px solid #666;
 }
 
 #sliderImages {
