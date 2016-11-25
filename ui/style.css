@@ -4,40 +4,48 @@ body {
   font-size: 22px;
   line-height: 32px;
   color: #ffffff;
-  word-wrap: break-word ;
-  
+  word-wrap: break-word !important;
+  /*font-family: 'Open Sans', sans-serif;*/
 }
 
 h1 {
   font-size: 60px;
+    text-decoration: underline;
   text-align: center;
-  color: #FFF;
+  color:aqua;
   margin-top: 100px;
-   font-family: monospace;
+
+  font-family: monospace;
 }
+
 
 h3 {
   font-size: 30px;
-  text-align: center;
-  color: #FFF;
+   text-align: center;
+  color: aqua;
 }
 
-h3 a {
-  color: #FFF;
+h2 {
+  font-size: 30px;
+   text-align: center;
+    text-decoration: underline;
+  color: aqua;
 }
+
 
 a {
   color: #FFF;
 }
 
 
+  
 
 #container {
   margin: 0 auto;
 }
 
 p {
-  text-align: center;
+  text-align: left;
 }
 
 nav {
@@ -128,7 +136,7 @@ li > a:only-child:after {
   height: 300px;
   overflow: hidden;
   margin: auto;
- border: 10px solid #666;
+  border: 10px solid #666;
 }
 
 #sliderImages {
@@ -280,4 +288,45 @@ li > a:only-child:after {
   100% {
     margin-left: -3200px;
   }
+}
+
+
+
+.container1 { 
+    width: 100%;
+    height: 100%;
+}
+
+.col-half {
+    
+    padding: 0;
+    float: left;
+    min-width: 25%;
+    border: 10px;
+    border-color: aqua;
+   
+    height: 100%;
+}
+
+
+#stackheader1 {
+ background-color: #666;
+ color: #FFF;
+ width: 410px;
+ height: 180px;
+}
+#title1 {
+ color: aqua;
+ float: left;
+ padding: 15px 0 0 15px; 
+}
+
+button {
+    color: crimson;
+    padding: 10px;
+    background-color: aquamarine;
+    font-family: sans-serif ;
+    font-weight: bold;
+   
+    
 }
